@@ -1,7 +1,6 @@
 FROM node:current-alpine
 
-# fixing build errors ?
-
+# following build recommendations
 RUN npm install -g npm@9.1.2
 
  
