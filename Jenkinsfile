@@ -10,8 +10,7 @@ pipeline {
             steps {
                 git 'https://github.com/sicreji/nuvolapp.git'
                 sh '''
-                npm install
-                npm run build
+                docker build -t nuvolapp:beta
                 '''
             }
         }
