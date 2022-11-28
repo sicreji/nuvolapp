@@ -7,6 +7,7 @@ pipeline {
                 // git 'https://github.com/sicreji/nuvolapp.git'
                 sh '''
                 docker --help
+                docker build -t nuvolapp:latest .
                 '''
             }
         }
