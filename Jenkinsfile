@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/sicreji/nuvolapp.git'
+                // git 'https://github.com/sicreji/nuvolapp.git'
                 sh '''
-                docker build -t nuvolapp:latest .
+                docker --help
                 '''
             }
         }
