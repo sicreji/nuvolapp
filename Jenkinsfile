@@ -6,7 +6,7 @@ pipeline {
             steps {
                 git 'https://github.com/sicreji/nuvolapp.git'
                 sh '''
-                docker build -t nuvolapp:beta
+                docker build -t nuvolapp:latest .
                 '''
             }
         }
