@@ -4,13 +4,27 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // git 'https://github.com/sicreji/nuvolapp.git'
                 sh '''
-                docker --help
                 docker build -t nuvolapp:latest .
                 '''
             }
         }
+        
+        stage('Test') {
+            steps {
+                sh '''
+                echo "Tests happen here"
+                '''
+            }
+        
+        }
        
+        stage('Publish'){
+            steps {
+                // figuring out how to publish to dockerhub
+                
+            }
+        
+        }
     }
 }
