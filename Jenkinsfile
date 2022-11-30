@@ -40,8 +40,8 @@ pipeline {
     } // stages
     
     post{
-        always {  
-	    sh 'docker logout'     
+        always {
+		sh 'docker logout'     
     	}
     }
 } // pipeline
